@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <form #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
+      <div class="input-task">
+        <input class="input-task" placeholder="add a task" type="text" name="task" ngModel required>
+        <button mat-butto mat-mini-fab type="submit">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+    </form>
+  
+    <div class="list-container" *ngIf="todos.length || completed.length ">
+  
+      <!-- Todo -->
+        <div class="todo-container column-container"  >
+          <div class="list"
+             cdkDropList
+             #todoList="cdkDropList"
+             [cdkDropListData]="todos"
+             [cdkDropListConnectedTo]="[doneList]"
+             (cdkDropListDropped)="onDrop($event)">
+             <h2>To Do</h2>
+             <mat-card *ngFor="let todo of todos" cdkDrag>
+               <mat-card-header>
+              <mat-card-title>{{todo}}</mat-card-title>
+            </mat-card-header>
+          </mat-card>
+        </div>
+    </div>
+      
+      <!-- Done -->
+              <div class="done-container column-container">
+                <div class="list"
+                cdkDropList
+                #doneList="cdkDropList"
+                [cdkDropListData]="completed"
+                [cdkDropListConnectedTo]="todoList"
+                (cdkDropListDropped)="onDrop($event)">
+                <h2>Done</h2>
+                <mat-card *ngFor="let complete of completed" cdkDrag>
+                  <mat-card-header>
+                    <mat-card-title>{{complete}}</mat-card-title>
+                  </mat-card-header>
+                </mat-card>
+              </div>
+            </div>
+      
+    </div>
+  </div>

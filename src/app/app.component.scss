@@ -1,12 +1,24 @@
 .container{
+    font-family: 'Courier New', Courier, monospace;
     display: grid;
     height: 100%;
     grid-template-rows: min-content 1fr min-content;
+}
+.main-content{
+    display: grid;
+    width: 100%;
     grid-template-columns: 1fr 2fr;
 }
 
 app-header, footer {
     grid-column: 1/-1;
-    background-color: antiquewhite;
+    background-color:#ff7661;
 }
+
+@media (max-width: 1000px) {
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+  }
 

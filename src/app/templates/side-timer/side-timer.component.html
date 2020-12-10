@@ -4,8 +4,8 @@
      {{value[0]}}:{{value[1] < 10 ? 0 : ''}}{{value[1]}}
     </h1>
     <div class="controls">
-      <div class="example-button-container">
-        <button mat-butto mat-mini-fab  (click)="startTimer()">
+      <div class="example-button-container" *ngIf="!startTimerClicked">
+        <button mat-butto mat-mini-fab  (click)="startTimer()" >
             <mat-icon>play_circle_filled</mat-icon>
         </button>
       </div>
@@ -14,7 +14,6 @@
             <mat-icon>stop</mat-icon>
         </button>
       </div>
-      
       <div class="example-button-container">
         <button mat-fab  mat-mini-fab (click)="resetTimer()" (click)="startTimer()">
             <mat-icon>replay</mat-icon>

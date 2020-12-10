@@ -10,6 +10,7 @@ export class SideTimerComponent implements OnInit, OnDestroy {
 
   @Input() minute: number;
   @Input() seconde: number;
+  startTimerClicked : boolean = false;
   // tslint:disable-next-line:no-output-on-prefix
 
   running = false;
@@ -38,6 +39,7 @@ export class SideTimerComponent implements OnInit, OnDestroy {
   }
 
   startTimer(): void {
+    this.startTimerClicked = !this.startTimerClicked;
     if (!this.running) {
       // Set running to true.
       this.running = true;
@@ -52,6 +54,7 @@ export class SideTimerComponent implements OnInit, OnDestroy {
 
   stopTimer(): void {
     if (this.running) {
+      this.startTimerClicked = !this.startTimerClicked;
       // Set running to false.
       this.running = false;
       // If we want to stop the timer then unsubscribe from the interval.

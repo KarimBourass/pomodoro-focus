@@ -19,3 +19,14 @@ mat-icon {
 button {
   background-color: transparent;
 }
+
+a {
+  margin-left: 1em;
+  color: black;
+  text-decoration: none;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+}

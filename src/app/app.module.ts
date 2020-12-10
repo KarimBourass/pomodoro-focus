@@ -10,7 +10,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-
+import {MatCardModule} from '@angular/material/card';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { BodyComponent } from './templates/body/body.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +22,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SideTimerComponent
+    SideTimerComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatIconModule,
     MatToolbarModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
