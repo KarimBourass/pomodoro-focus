@@ -31,3 +31,16 @@ a {
   display: flex;
   align-items: center;
 }
+.logo{
+  margin-left: 3em;
+  display: flex;
+  align-items: center;
+  img{
+    margin-left: 0.5em;
+    height: 2.25em;
+  }
+  h2{
+    font-size: larger;
+    font-family: cursive;
+  }
+}

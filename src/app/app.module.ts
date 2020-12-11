@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { PomodoroTimerComponent } from './templates/pomodoro-timer/pomodoro-timer.component';
 import { BreakComponent } from './templates/break/break.component';
+import { FooterComponent } from './templates/footer/footer.component';
 
 
 
@@ -28,7 +29,8 @@ import { BreakComponent } from './templates/break/break.component';
     SideTimerComponent,
     BodyComponent,
     PomodoroTimerComponent,
-    BreakComponent
+    BreakComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

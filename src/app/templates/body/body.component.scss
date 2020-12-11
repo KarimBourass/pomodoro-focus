@@ -96,6 +96,9 @@ a {
 .input-task {
   display: flex;
   align-items: center;
+  border-radius: 0.75rem;
+  border: solid black;
+
   input {
     font-weight: bolder;
     font-size:25px;
@@ -107,15 +110,12 @@ a {
   input:focus {
     outline: none;
   }
-  border-radius: 0.75rem;
-  border: solid black;
+  
   button {
-    background-color: wheat;
+    background-color: #f43b3b;
     color: black;
     margin-left: 1em;
     margin-right: 1em;
   }
-  button:hover{
-    background-color: #ff6961;
-  }
+  
 }

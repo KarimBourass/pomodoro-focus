@@ -4,17 +4,17 @@
     </h1>
     <div class="controls">
       <div class="example-button-container" *ngIf="!startTimerClicked">
-        <button (click)="startTimer()" >
+        <button (click)="startTimer()" mat-icon-button>
             <mat-icon>play_circle_filled</mat-icon>
         </button>
       </div>
       <div class="example-button-container">
-        <button (click)="stopTimer()">
+        <button (click)="stopTimer()" mat-icon-button>
             <mat-icon>stop</mat-icon>
         </button>
       </div>
       <div class="example-button-container">
-        <button  (click)="resetTimer()" (click)="startTimer()">
+        <button  (click)="resetTimer()" mat-icon-button>
             <mat-icon>replay</mat-icon>
         </button>
       </div>

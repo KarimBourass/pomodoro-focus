@@ -10,9 +10,8 @@
     grid-template-columns: 1fr 2fr;
 }
 
-app-header, footer {
+app-header, app-footer {
     grid-column: 1/-1;
-    background-color:#ff7661;
 }
 
 @media (max-width: 1000px) {

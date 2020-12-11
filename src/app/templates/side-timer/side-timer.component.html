@@ -1,6 +1,12 @@
-<div class="togle">
-  Pomdoro <mat-slide-toggle color="primary" (change)="onToggle($event)"></mat-slide-toggle>Break
+<div class="toggle-chose">
+  <p>Break</p>
+  <label class="toggle-control">
+    <input type="checkbox" checked="checked" (change)="onToggle($event)">
+    <span class="control"></span>
+  </label>
+  <p>Pomdoro</p>
 </div>
+
 <div class="container">
   
     <app-pomodoro-timer *ngIf="!toggled" ></app-pomodoro-timer>
