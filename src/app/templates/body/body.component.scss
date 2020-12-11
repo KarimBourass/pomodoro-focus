@@ -30,8 +30,8 @@ h2 {
   vertical-align: top;
   background-color: transparent;
 }
-mat-card-title,
-mat-card-subtitle {
+mat-card-title {
+  font-weight: bolder;
   background-color: transparent;
 }
 
@@ -110,6 +110,8 @@ a {
   border-radius: 0.75rem;
   border: solid black;
   button {
+    background-color: wheat;
+    color: black;
     margin-left: 1em;
     margin-right: 1em;
   }

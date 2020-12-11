@@ -14,6 +14,9 @@ import {MatCardModule} from '@angular/material/card';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { BodyComponent } from './templates/body/body.component';
 import { FormsModule } from '@angular/forms';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { PomodoroTimerComponent } from './templates/pomodoro-timer/pomodoro-timer.component';
+import { BreakComponent } from './templates/break/break.component';
 
 
 
@@ -23,7 +26,9 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     SideTimerComponent,
-    BodyComponent
+    BodyComponent,
+    PomodoroTimerComponent,
+    BreakComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatCardModule,
     DragDropModule,
-    FormsModule
+    FormsModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
